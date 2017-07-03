@@ -8,7 +8,7 @@ import java.util.Collection;
 public interface GenericsDao<T, Id> {
     void getByIdPersons(Id id);
     void toSavePersons(T entity);
-    void toUpadtePersons(T entity);
+    void toUpadtePersons(Id id,T entity);
     void toDelete(Id id);
     Collection<T> getAllPersons();
 }
